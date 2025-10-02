@@ -1,14 +1,13 @@
 import axios from "axios";
 
 const axiosConfig = axios.create({
-    baseURL: 'http://localhost:4000/api/',
+  baseURL: process.env.REACT_APP_API_URL + "/api/",
 
-    headers: {
-        'Content-Type': 'application/json'
-    }
-    
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
-export {
-    axiosConfig
-}
+export { 
+    axiosConfig 
+};
